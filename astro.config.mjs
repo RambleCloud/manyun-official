@@ -6,6 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://manyun-official.pages.dev',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]
