@@ -1,0 +1,487 @@
+
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="漫云科技工作室 | 数字技术与创新服务"
+  description="漫云科技工作室，提供软件与系统开发、学术科研指导、知识产权相关服务，以技术解决实际需求。"
+>
+  <!-- 顶部导航 -->
+  <header class="absolute top-0 z-50 w-full border-b border-white/10 bg-[#071326]/70 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+      <a href="#" class="flex items-center gap-3">
+        
+	<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-cyan-300/20 bg-gradient-to-br from-[#163c70] to-[#312e81] shadow-lg shadow-blue-500/20">
+ 	 <svg
+ 	   viewBox="0 0 120 100"
+ 	   class="h-8 w-9"
+  	  fill="none"
+ 	   xmlns="http://www.w3.org/2000/svg"
+  	  aria-label="漫云科技工作室 Logo"
+   	 role="img"
+ 	 >
+ 	   <defs>
+  	    <linearGradient id="manyun-nav-logo-gradient" x1="10" y1="10" x2="110" y2="90">
+  	      <stop stop-color="#67E8F9" />
+	     <stop offset="0.5" stop-color="#60A5FA" />
+  	      <stop offset="1" stop-color="#A78BFA" />
+   	   </linearGradient>
+ 	   </defs>
+
+  	  <path
+ 	     d="M26 72C16 72 10 65 10 56C10 47 17 40 27 40C30 25 43 15 58 15C73 15 85 25 89 39C101 39 110 47 110 57C110 66 103 73 93 73H26Z"
+  	    stroke="url(#manyun-nav-logo-gradient)"
+  	    stroke-width="5"
+     	stroke-linecap="round"
+   	 	stroke-linejoin="round"
+  	 	 />
+
+    	<path
+  	    d="M31 66V43L60 65L89 43V66"
+   	    stroke="url(#manyun-nav-logo-gradient)"
+    	stroke-width="7"
+  	    stroke-linecap="round"
+   	    stroke-linejoin="round"
+   		 />
+
+    	<path d="M60 65V77" stroke="#67E8F9" stroke-width="3" stroke-linecap="round" />
+    	<circle cx="60" cy="84" r="3.5" fill="#67E8F9" />
+  	</svg>
+	</div>
+
+    	    <div>
+       		   <div class="text-lg font-bold tracking-wide text-white">漫云科技工作室</div>
+       		   <div class="text-[9px] tracking-[0.24em] text-blue-200/60">MANYUN TECH STUDIO</div>
+       		 </div>
+     	 </a>
+
+      <nav class="hidden items-center gap-9 text-sm text-slate-300 md:flex">
+        <a href="#home" class="transition hover:text-cyan-300">首页</a>
+        <a href="#services" class="transition hover:text-cyan-300">服务项目</a>
+        <a href="#advantages" class="transition hover:text-cyan-300">服务优势</a>
+        <a href="#process" class="transition hover:text-cyan-300">服务流程</a>
+        <a href="#contact" class="transition hover:text-cyan-300">联系我们</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+  <!-- 桌面端联系我们按钮 -->
+  <a
+    href="#contact"
+    class="hidden rounded-full border border-cyan-300/40 px-5 py-2.5 text-sm font-medium text-cyan-200 transition hover:border-cyan-300 hover:bg-cyan-300/10 md:inline-flex"
+  >
+    联系我们 ↗
+  </a>
+
+  <!-- 手机端汉堡菜单 -->
+  <details class="group relative md:hidden">
+    <summary
+      class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-xl border border-cyan-300/30 bg-white/5 text-cyan-200 transition hover:bg-cyan-300/10 [&::-webkit-details-marker]:hidden"
+      aria-label="展开导航菜单"
+    >
+      <svg
+        class="h-6 w-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+      >
+        <path d="M4 7h16M4 12h16M4 17h16" />
+      </svg>
+    </summary>
+
+    <!-- 手机端展开菜单 -->
+    <div
+      class="absolute right-0 top-full z-50 mt-3 w-64 overflow-hidden rounded-2xl border border-cyan-300/20 bg-[#0b1b32]/95 p-3 shadow-2xl shadow-black/30 backdrop-blur-xl"
+    >
+      <nav class="flex flex-col gap-1">
+        <a href="#home" class="mobile-nav-link rounded-xl px-4 py-3 text-sm text-slate-200 transition hover:bg-cyan-300/10 hover:text-cyan-300">
+          首页
+        </a>
+        <a href="#services" class="mobile-nav-link rounded-xl px-4 py-3 text-sm text-slate-200 transition hover:bg-cyan-300/10 hover:text-cyan-300">
+          服务项目
+        </a>
+        <a href="#advantages" class="mobile-nav-link rounded-xl px-4 py-3 text-sm text-slate-200 transition hover:bg-cyan-300/10 hover:text-cyan-300">
+          服务优势
+        </a>
+        <a href="#process" class="mobile-nav-link rounded-xl px-4 py-3 text-sm text-slate-200 transition hover:bg-cyan-300/10 hover:text-cyan-300">
+          服务流程
+        </a>
+
+        <div class="my-1 border-t border-white/10"></div>
+
+        <a href="#contact" class="mobile-nav-link rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 px-4 py-3 text-center text-sm font-semibold text-white transition hover:opacity-90">
+          联系我们 ↗
+        </a>
+      </nav>
+    </div>
+  </details>
+</div>
+    </div>
+  </header>
+
+<script>
+  // 点击手机端导航链接后，自动关闭展开菜单
+  document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      const menu = link.closest('details');
+
+      if (menu instanceof HTMLDetailsElement) {
+        menu.open = false;
+      }
+    });
+  });
+</script>
+
+  <main>
+    <!-- 首屏 Banner -->
+    <section id="home" class="relative flex min-h-[720px] items-center overflow-hidden bg-[#071326] pt-28 text-white">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_75%_45%,rgba(37,99,235,0.24),transparent_45%),radial-gradient(ellipse_at_15%_80%,rgba(8,145,178,0.13),transparent_40%)]"></div>
+
+      <div class="absolute inset-0 opacity-[0.12]" style="background-image:linear-gradient(rgba(148,163,184,.25) 1px,transparent 1px),linear-gradient(90deg,rgba(148,163,184,.25) 1px,transparent 1px);background-size:48px 48px;"></div>
+
+      <div class="absolute -right-32 top-24 h-[500px] w-[500px] rounded-full border border-blue-400/10"></div>
+      <div class="absolute -right-12 top-44 h-[340px] w-[340px] rounded-full border border-cyan-300/10"></div>
+      <div class="absolute right-24 top-64 h-40 w-40 rounded-full bg-blue-500/20 blur-[90px]"></div>
+
+      <div class="relative mx-auto grid w-full max-w-7xl items-center gap-16 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-10">
+        <div>
+          <div class="mb-8 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/5 px-4 py-2 text-xs tracking-widest text-cyan-200">
+            <span class="h-2 w-2 rounded-full bg-cyan-400 shadow-[0_0_12px_#22d3ee]"></span>
+            TECHNOLOGY · INNOVATION · POSSIBILITY
+          </div>
+
+          <h1 class="max-w-3xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+            让技术连接想法
+            <br />
+            <span class="mt-3 inline-block bg-gradient-to-r from-cyan-300 via-blue-400 to-violet-400 bg-clip-text text-transparent">
+              让创新创造价值
+            </span>
+          </h1>
+
+          <p class="mt-8 max-w-xl text-base leading-8 text-slate-300 sm:text-lg">
+            漫云科技工作室，专注于软件与系统开发、学术科研指导及知识产权相关服务，以专业技术和务实服务，帮助客户解决实际需求。
+          </p>
+
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#services" class="rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-blue-500/20 transition hover:-translate-y-1 hover:shadow-blue-500/40">
+              探索我们的服务 →
+            </a>
+            <a href="#contact" class="rounded-lg border border-white/20 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-cyan-300/50 hover:bg-white/10">
+              了解合作方式
+            </a>
+          </div>
+
+          <div class="mt-14 flex flex-wrap gap-x-8 gap-y-4 text-sm text-slate-400">
+            <span>✦ 按需沟通</span>
+            <span>✦ 方案定制</span>
+            <span>✦ 过程协作</span>
+          </div>
+        </div>
+
+        <!-- 右侧科技视觉 -->
+        <div class="relative mx-auto flex aspect-square w-full max-w-[470px] items-center justify-center">
+          <div class="absolute inset-5 rounded-full border border-blue-300/15"></div>
+          <div class="absolute inset-12 rounded-full border border-cyan-300/20"></div>
+          <div class="absolute inset-20 rounded-full border border-dashed border-blue-300/20"></div>
+          <div class="absolute h-64 w-64 rounded-full bg-blue-600/20 blur-[80px]"></div>
+
+
+<div class="relative flex h-52 w-52 flex-col items-center justify-center rounded-[2.5rem] border border-cyan-200/30 bg-gradient-to-br from-blue-500/20 via-[#142b55]/90 to-violet-500/20 shadow-[0_0_90px_rgba(59,130,246,0.25)] backdrop-blur-xl">
+  <svg
+    viewBox="0 0 120 100"
+    class="h-24 w-28 drop-shadow-[0_0_15px_rgba(34,211,238,0.45)]"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-label="漫云科技工作室标志"
+    role="img"
+  >
+    <defs>
+      <linearGradient id="manyun-logo-gradient" x1="15" y1="10" x2="105" y2="90" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#67E8F9" />
+        <stop offset="0.5" stop-color="#60A5FA" />
+        <stop offset="1" stop-color="#A78BFA" />
+      </linearGradient>
+    </defs>
+
+    <path
+      d="M26 72C16 72 10 65 10 56C10 47 17 40 27 40C30 25 43 15 58 15C73 15 85 25 89 39C101 39 110 47 110 57C110 66 103 73 93 73H26Z"
+      stroke="url(#manyun-logo-gradient)"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <path
+      d="M31 66V43L60 65L89 43V66"
+      stroke="url(#manyun-logo-gradient)"
+      stroke-width="7"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <path d="M60 65V77" stroke="#67E8F9" stroke-width="3" stroke-linecap="round" />
+    <circle cx="60" cy="84" r="3.5" fill="#67E8F9" />
+    <path d="M97 17V27M92 22H102" stroke="#A5F3FC" stroke-width="2" stroke-linecap="round" />
+  </svg>
+
+  <div class="mt-2 text-center">
+    <div class="text-lg font-bold tracking-[0.18em] text-white">MANYUN</div>
+    <div class="mt-1 text-[9px] tracking-[0.35em] text-cyan-200/80">TECH STUDIO</div>
+  </div>
+</div>
+
+
+          
+			<!-- 四个环绕信息卡片 -->
+			<div class="absolute left-0 top-16 rounded-xl border border-cyan-300/20 bg-slate-900/85 px-4 py-3 shadow-xl backdrop-blur-lg">
+  			 <div class="text-[10px] tracking-widest text-slate-400">DEVELOPMENT</div>
+ 			  <div class="mt-1 text-sm font-semibold text-cyan-300">软件开发</div>
+			</div>
+
+			<div class="absolute right-0 top-16 rounded-xl border border-blue-300/20 bg-slate-900/85 px-4 py-3 shadow-xl backdrop-blur-lg">
+ 			 <div class="text-[10px] tracking-widest text-slate-400">ACADEMIC</div>
+ 			 <div class="mt-1 text-sm font-semibold text-blue-300">学术科研</div>
+			</div>
+
+			<div class="absolute bottom-16 left-0 rounded-xl border border-violet-300/20 bg-slate-900/85 px-4 py-3 shadow-xl backdrop-blur-lg">
+ 			 <div class="text-[10px] tracking-widest text-slate-400">INNOVATION</div>
+			  <div class="mt-1 text-sm font-semibold text-violet-300">创新服务</div>
+			</div>
+
+			<div class="absolute bottom-16 right-0 rounded-xl border border-indigo-300/20 bg-slate-900/85 px-4 py-3 shadow-xl backdrop-blur-lg">
+  			 <div class="text-[10px] tracking-widest text-slate-400">IP SERVICES</div>
+ 			 <div class="mt-1 text-sm font-semibold text-indigo-300">知识产权</div>
+			</div>
+
+
+          <!-- 科技光点装饰 -->
+			<div class="absolute right-10 top-8 h-3 w-3 rounded-full bg-cyan-300 shadow-[0_0_20px_5px_rgba(103,232,249,0.35)]"></div>
+			<div class="absolute bottom-12 left-16 h-2 w-2 rounded-full bg-violet-400 shadow-[0_0_18px_4px_rgba(167,139,250,0.35)]"></div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-cyan-400/50 to-transparent"></div>
+    </section>
+
+    <!-- 核心业务 -->
+    <section id="services" class="bg-[#f6f8fc] px-6 py-24 lg:px-10">
+      <div class="mx-auto max-w-7xl">
+        <div class="mx-auto mb-14 max-w-2xl text-center">
+          <div class="text-xs font-bold tracking-[0.3em] text-blue-600">WHAT WE DO</div>
+          <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">核心服务领域</h2>
+          <p class="mt-5 leading-7 text-slate-500">
+            围绕技术开发、学术研究与知识产权需求，提供清晰、务实的服务支持。
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-900/5">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-2xl text-blue-600">⌘</div>
+            <div class="mt-7 text-xs font-bold tracking-[0.2em] text-blue-600">01 / DEVELOPMENT</div>
+            <h3 class="mt-3 text-xl font-bold text-slate-900">软件与系统开发</h3>
+            <p class="mt-4 min-h-20 text-sm leading-7 text-slate-500">
+              根据实际业务需求，提供软件开发、网站建设及各类数字化系统解决方案。
+            </p>
+            <ul class="mt-6 space-y-3 border-t border-slate-100 pt-6 text-sm text-slate-600">
+              <li>— 网站与平台开发</li>
+              <li>— 微信小程序开发</li>
+              <li>— 定制化软件系统</li>
+            </ul>
+          </article>
+
+          <article class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-cyan-200 hover:shadow-xl hover:shadow-cyan-900/5">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-50 text-2xl text-cyan-600">▤</div>
+            <div class="mt-7 text-xs font-bold tracking-[0.2em] text-cyan-600">02 / ACADEMIC</div>
+            <h3 class="mt-3 text-xl font-bold text-slate-900">学术科研指导</h3>
+            <p class="mt-4 min-h-20 text-sm leading-7 text-slate-500">
+              围绕学术研究过程，提供选题思路、研究方法、论文结构及学术规范方面的指导。
+            </p>
+            <ul class="mt-6 space-y-3 border-t border-slate-100 pt-6 text-sm text-slate-600">
+              <li>— 选题与研究思路指导</li>
+              <li>— 研究方法与数据分析指导</li>
+              <li>— 论文结构与规范指导</li>
+            </ul>
+          </article>
+
+          <article class="group rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-violet-200 hover:shadow-xl hover:shadow-violet-900/5">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-50 text-2xl text-violet-600">◇</div>
+            <div class="mt-7 text-xs font-bold tracking-[0.2em] text-violet-600">03 / IP SERVICES</div>
+            <h3 class="mt-3 text-xl font-bold text-slate-900">知识产权服务</h3>
+            <p class="mt-4 min-h-20 text-sm leading-7 text-slate-500">
+              面向软件成果与创新项目，提供知识产权申请相关咨询及材料准备支持。
+            </p>
+            <ul class="mt-6 space-y-3 border-t border-slate-100 pt-6 text-sm text-slate-600">
+              <li>— 软件著作权申请咨询</li>
+              <li>— 专利申请相关咨询</li>
+              <li>— 申请材料整理与准备</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+<!-- 服务覆盖场景 -->
+<section id="advantages" class="relative overflow-hidden bg-[#f6f8fc] px-6 py-24 lg:px-10">
+  <div class="absolute -left-40 top-10 h-96 w-96 rounded-full bg-blue-100/70 blur-[100px]"></div>
+  <div class="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-violet-100/60 blur-[100px]"></div>
+
+  <div class="relative mx-auto max-w-7xl">
+    <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <div>
+        <div class="text-xs font-bold tracking-[0.3em] text-blue-600">APPLICATION SCENARIOS</div>
+        <h2 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          服务覆盖场景
+        </h2>
+        <p class="mt-5 max-w-xl text-sm leading-8 text-slate-500">
+          不同领域，不同需求。我们围绕实际问题提供对应的技术支持与专业指导。
+        </p>
+      </div>
+      <div class="hidden text-right md:block">
+        <div class="text-5xl font-light tracking-widest text-blue-100">MANYUN</div>
+        <div class="mt-2 text-[10px] tracking-[0.3em] text-slate-400">CONNECT IDEAS WITH TECHNOLOGY</div>
+      </div>
+    </div>
+
+    <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <article class="group rounded-2xl border border-slate-200/80 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-blue-200 hover:shadow-xl hover:shadow-blue-900/5">
+        <div class="flex items-center justify-between">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-2xl text-blue-600">▤</div>
+          <span class="text-3xl font-light text-blue-100">01</span>
+        </div>
+        <h3 class="mt-7 text-lg font-bold text-slate-900">学术研究场景</h3>
+        <p class="mt-4 min-h-24 text-sm leading-7 text-slate-500">
+          面向高校学生的学习与研究需求，提供选题思路、研究方法、论文结构及学术规范方面的指导。
+        </p>
+        <div class="mt-5 border-t border-slate-100 pt-5 text-xs leading-6 text-blue-600">
+          选题指导 · 研究方法 · 学术规范
+        </div>
+      </article>
+
+      <article class="group rounded-2xl border border-slate-200/80 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-cyan-200 hover:shadow-xl hover:shadow-cyan-900/5">
+        <div class="flex items-center justify-between">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-50 text-2xl text-cyan-600">⌘</div>
+          <span class="text-3xl font-light text-cyan-100">02</span>
+        </div>
+        <h3 class="mt-7 text-lg font-bold text-slate-900">企业数字化场景</h3>
+        <p class="mt-4 min-h-24 text-sm leading-7 text-slate-500">
+          面向企业与商户的实际经营需求，提供网站、小程序及业务管理系统等开发支持。
+        </p>
+        <div class="mt-5 border-t border-slate-100 pt-5 text-xs leading-6 text-cyan-600">
+          网站建设 · 小程序 · 系统开发
+        </div>
+      </article>
+
+      <article class="group rounded-2xl border border-slate-200/80 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-violet-200 hover:shadow-xl hover:shadow-violet-900/5">
+        <div class="flex items-center justify-between">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-50 text-2xl text-violet-600">◇</div>
+          <span class="text-3xl font-light text-violet-100">03</span>
+        </div>
+        <h3 class="mt-7 text-lg font-bold text-slate-900">知识产权场景</h3>
+        <p class="mt-4 min-h-24 text-sm leading-7 text-slate-500">
+          面向软件成果与创新项目，提供软件著作权、专利申请相关咨询及材料准备支持。
+        </p>
+        <div class="mt-5 border-t border-slate-100 pt-5 text-xs leading-6 text-violet-600">
+          软件著作权 · 专利咨询 · 材料整理
+        </div>
+      </article>
+
+      <article class="group rounded-2xl border border-slate-200/80 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-indigo-200 hover:shadow-xl hover:shadow-indigo-900/5">
+        <div class="flex items-center justify-between">
+          <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-2xl text-indigo-600">✧</div>
+          <span class="text-3xl font-light text-indigo-100">04</span>
+        </div>
+        <h3 class="mt-7 text-lg font-bold text-slate-900">个人与团队需求</h3>
+        <p class="mt-4 min-h-24 text-sm leading-7 text-slate-500">
+          面向个人开发者及项目团队，围绕具体想法沟通技术方案、功能需求与实现方向。
+        </p>
+        <div class="mt-5 border-t border-slate-100 pt-5 text-xs leading-6 text-indigo-600">
+          需求梳理 · 技术沟通 · 方案设计
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- 服务流程 -->
+    <section id="process" class="bg-[#071326] px-6 py-24 text-white lg:px-10">
+      <div class="mx-auto max-w-7xl">
+        <div class="text-center">
+          <div class="text-xs font-bold tracking-[0.3em] text-cyan-300">HOW WE WORK</div>
+          <h2 class="mt-4 text-3xl font-bold sm:text-4xl">简单清晰的服务流程</h2>
+          <p class="mt-5 text-sm leading-7 text-slate-400">从需求沟通开始，让每一步都有迹可循。</p>
+        </div>
+
+        <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="relative border-t border-blue-400/30 pt-7">
+            <div class="absolute -top-3 left-0 h-6 w-6 rounded-full border-4 border-[#071326] bg-cyan-400"></div>
+            <div class="text-sm tracking-widest text-cyan-300">STEP 01</div>
+            <h3 class="mt-4 text-lg font-bold">需求沟通</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">了解项目背景、具体需求及预期目标。</p>
+          </div>
+          <div class="relative border-t border-blue-400/30 pt-7">
+            <div class="absolute -top-3 left-0 h-6 w-6 rounded-full border-4 border-[#071326] bg-blue-400"></div>
+            <div class="text-sm tracking-widest text-blue-300">STEP 02</div>
+            <h3 class="mt-4 text-lg font-bold">方案确认</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">梳理服务内容，沟通实施方式与交付要求。</p>
+          </div>
+          <div class="relative border-t border-blue-400/30 pt-7">
+            <div class="absolute -top-3 left-0 h-6 w-6 rounded-full border-4 border-[#071326] bg-violet-400"></div>
+            <div class="text-sm tracking-widest text-violet-300">STEP 03</div>
+            <h3 class="mt-4 text-lg font-bold">项目实施</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">按照确认后的方案开展工作与过程沟通。</p>
+          </div>
+          <div class="relative border-t border-blue-400/30 pt-7">
+            <div class="absolute -top-3 left-0 h-6 w-6 rounded-full border-4 border-[#071326] bg-indigo-400"></div>
+            <div class="text-sm tracking-widest text-indigo-300">STEP 04</div>
+            <h3 class="mt-4 text-lg font-bold">成果交付</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-400">核对交付内容，完成必要的说明与后续沟通。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 px-6 py-24 text-white lg:px-10">
+      <div class="absolute -right-20 -top-40 h-96 w-96 rounded-full border border-white/10"></div>
+      <div class="absolute -right-5 -top-24 h-64 w-64 rounded-full border border-white/10"></div>
+
+      <div class="relative mx-auto max-w-4xl text-center">
+        <div class="text-xs font-bold tracking-[0.3em] text-blue-200">GET IN TOUCH</div>
+        <h2 class="mt-5 text-3xl font-bold sm:text-5xl">让我们聊聊你的想法</h2>
+        <p class="mx-auto mt-6 max-w-2xl leading-8 text-blue-100">
+          无论是软件开发需求、学术研究问题，还是知识产权相关咨询，都欢迎与我们取得联系。
+        </p>
+        
+		<a
+ 			 href="mailto:seanxiaomai@gmail.com?subject=%E6%BC%AB%E4%BA%91%E7%A7%91%E6%8A%80%E5%B7%A5%E4%BD%9C%E5%AE%A4%E4%B8%9A%E5%8A%A1%E5%92%A8%E8%AF%A2&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E5%92%A8%E8%AF%A2%E7%9B%B8%E5%85%B3%E6%9C%8D%E5%8A%A1%E3%80%82%0A%0A%E5%A7%93%E5%90%8D%EF%BC%9A%0A%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F%EF%BC%9A%0A%E5%92%A8%E8%AF%A2%E5%86%85%E5%AE%B9%EF%BC%9A%0A%0A%E6%9C%9F%E5%BE%85%E6%82%A8%E7%9A%84%E5%9B%9E%E5%A4%8D%E3%80%82"
+			  class="mt-9 inline-flex rounded-lg bg-white px-8 py-4 text-sm font-bold text-blue-700 shadow-xl transition hover:-translate-y-1 hover:shadow-2xl"
+		>
+  		发送邮件咨询 ↗
+		</a>
+
+		<p class="mt-5 text-xs text-blue-200/80">
+ 		 官方联系邮箱：seanxiaomai@gmail.com
+		</p>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="bg-[#050d1b] px-6 py-8 text-slate-400 lg:px-10">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-5 sm:flex-row sm:items-center">
+      <div>
+        <div class="font-bold tracking-wide text-white">漫云科技工作室</div>
+        <div class="mt-1 text-[10px] tracking-[0.2em] text-slate-500">MANYUN TECH STUDIO</div>
+      </div>
+      <div class="text-xs leading-6 sm:text-right">
+        <p>专注技术开发 · 学术科研指导 · 知识产权服务</p>
+        <p class="mt-1 text-slate-600">© {new Date().getFullYear()} 漫云科技工作室. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
